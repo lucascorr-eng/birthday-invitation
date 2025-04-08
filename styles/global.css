@@ -61,5 +61,29 @@
 
 /* global */
 body {
+  background-color: var(--shape-background);
   font: var(--body-md);
 }
+
+/* define spaces */
+#app {
+  display: flex;
+  height: 100vh;
+}
+
+#fixed {
+  display: flex;
+  
+  width: 40%;
+  height: 100vh;
+  overflow: hidden;
+  position: sticky;
+}
+
+#invite {
+display: flex;
+
+  width: 60%;
+  overflow-y: auto;
+}
+

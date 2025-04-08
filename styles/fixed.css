@@ -1,0 +1,28 @@
+
+.fixed-container {
+  border-radius: 12px;
+  margin: 20px;
+  padding: 32px;
+  
+  background: url(/assets/images/background.png) center / cover no-repeat;
+
+  & img {
+    width: 48px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+
+    margin-bottom: 16px;
+  }
+
+  & h1 { 
+    font: var(--logo);
+    color: var(--pink);
+
+    margin-bottom: 4px;
+  }
+
+  & p {
+    font: var(--body-md);
+    color: var(--text-heading);
+  }
+}
