@@ -7,6 +7,28 @@
   padding: 80px 130px;
 
   & h1 {
+    font: var(--heading-md);
+    color: var(--text-heading);
+    
+    margin-bottom: 40px;
+  }
+
+  & legend {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px; 
+
+    img {
+      width: 24px;
+      aspect-ratio: 1/1;
+      
+      margin-right: 12px;
+    }
+
+    span {
+      font: var(--heading-sm);
+      color: var(--text-heading);
+    }
   }
 }
 
