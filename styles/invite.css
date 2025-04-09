@@ -32,3 +32,29 @@
   }
 }
 
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font: var(--body-sm);
+    color: var(--text-body);
+
+    margin-bottom: 12px;
+  }
+
+  input {
+    max-width: 100%;
+    height: 48px;
+
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+
+    &::placeholder {
+      font: var(--body-md);
+      color: var(--input-placeholder);
+    }
+  }
+}
+
