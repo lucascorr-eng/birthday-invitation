@@ -61,29 +61,47 @@
 
 /* global */
 body {
+  overflow: hidden;
+
   background-color: var(--shape-background);
   font: var(--body-md);
 }
 
 /* define spaces */
 #app {
-  display: flex;
+  display: grid;
+  grid-template-columns: 38% 62%;
   height: 100vh;
+  overflow: hidden;
 }
 
 #fixed {
   display: flex;
-  
-  width: 40%;
+  justify-content: flex-end;  
+
   height: 100vh;
   overflow: hidden;
   position: sticky;
 }
 
-#invite {
-display: flex;
-
-  width: 60%;
-  overflow-y: auto;
+.fixed-container {
+  margin-right: auto;
 }
+
+#invite {
+  display: flex;
+
+  max-width: 700px;
+  overflow: auto;
+}
+
+.invite-container {
+  margin-left: auto;
+}
+
+fieldset { 
+  border: none;
+}
+
+
 

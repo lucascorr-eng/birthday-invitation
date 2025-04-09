@@ -25,7 +25,8 @@
     </aside>
 
     <main id="invite">
-      <div class="main-container">
+
+      <div class="invite-container">
 
         <h1>Crie seu convite</h1>
 
@@ -200,14 +201,20 @@
             </legend>
             
             <div class="input-wrapper">
-              <label for="name-person"></label>
+              <label for="name-person">Nome</label>
               <input type="text" name="name-person" id="name-person" placeholder="Nome Completo">
+
+              <div class="error">
+                <img src="assets/icons/circle-alert.svg" alt="Simbolo de alerta">
+                <span>Campo obrigatório</span>
+              </div>
+
             </div>
 
             <div class="grid-2">
               
               <div class="input-wrapper">
-                <label for="email-person"></label>
+                <label for="email-person">E-mail</label>
                 <input type="email" name="email-person" id="email-person" placeholder="exemplo@email.com">
               </div>
 
@@ -243,6 +250,7 @@
         </form>
         
       </div>
+
     </main>    
 
   </div>

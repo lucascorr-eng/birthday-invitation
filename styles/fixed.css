@@ -1,7 +1,7 @@
 
 .fixed-container {
   border-radius: 12px;
-  margin: 20px;
+  margin: 20px 10px;
   padding: 32px;
   
   background: url(/assets/images/background.png) center / cover no-repeat;
