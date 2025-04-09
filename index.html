@@ -37,23 +37,23 @@
               <span>Sobre o evento</span> 
             </legend>
 
-            <div class="input-wrapper">
-              <label for="name-event">Título</label>
-              <input type="text" name="name-event" id="name-event" placeholder="Nome do evento">
-            </div>
-
             <div class="inputs-grid">
-              <div class="input-wrapper">
+              <div class="input-wrapper name-event">
+                <label for="name-event">Título</label>
+                <input type="text" name="name-event" id="name-event" placeholder="Nome do evento">
+              </div>
+
+              <div class="input-wrapper date-start">
                 <label for="date-start">Início</label>
-                <input type="date" name="date-start" id="date-start" placeholder="DD/MM/AAAA, --:--">
+                <input type="date" name="date-start" id="date-start">
               </div>
 
-              <div class="input-wrapper">
+              <div class="input-wrapper data-end">
                 <label for="date-end">Fim</label>
-                <input type="text" name="date-end" id="date-end" placeholder="DD/MM/AAAA, --:--">
+                <input type="date" name="date-end" id="date-end">
               </div>
 
-              <div class="input-wrapper">
+              <div class="input-wrapper type-event">
                 <label for="type">Tipo</label>
 
                 <input type="radio" name="type" id="inperson" value="Presencial">
@@ -63,15 +63,15 @@
                 <label for="online">Online</label>
               </div>
 
-              <div class="input-wrapper">
+              <div class="input-wrapper local-event">
                 <label for="address">Local</label>
-                <input type="text" name="address" id="address" placeholder="link ou Endereço">
+                <input type="text" name="address" id="address" placeholder="Link ou Endereço">
               </div>
-            </div>
-
-            <div class="input-wrapper">
-              <label for="description">Descrição</label>
-              <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              
+              <div class="input-wrapper description-event">
+                <label for="description">Descrição</label>
+                <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              </div>
             </div>
 
           </fieldset>

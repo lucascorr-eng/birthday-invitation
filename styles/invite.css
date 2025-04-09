@@ -47,6 +47,8 @@
     max-width: 100%;
     height: 48px;
 
+    padding-inline: 16px;
+
     background-color: var(--input-base);
     border: 1px solid var(--input-stroke);
     border-radius: 8px;
@@ -54,7 +56,65 @@
     &::placeholder {
       font: var(--body-md);
       color: var(--input-placeholder);
-    }
+    }  
+  }
+
+  & input[type="date"] {
+    font: var(--body-md);
+    color: var(--input-placeholder);
   }
 }
+
+.inputs-grid { 
+  display: grid;
+  grid-template-areas: 
+  "name name"
+  "start end"
+  "type local"
+  "description description";
+
+  gap: 16px;
+}
+
+.name-event {
+  grid-area: name;
+}
+
+.date-start {
+  grid-area: start;
+ 
+}
+
+.date-end {
+  grid-area: end;
+}
+
+.type-event {
+  grid-area: type;
+}
+
+.local-event {
+  grid-area: local;
+}
+
+.description-event {
+  grid-area: description;
+
+  & textarea {
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    border-radius: 8px;
+
+    font: var(--body-sm);
+    color: var(--text-body);
+
+    padding: 16px;
+
+    width: 100%;
+    height: 136px;
+
+    margin-bottom: 48px;
+  }
+}
+
 
