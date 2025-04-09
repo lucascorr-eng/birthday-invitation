@@ -56,11 +56,21 @@
               <div class="input-wrapper type-event">
                 <label for="type">Tipo</label>
 
-                <input type="radio" name="type" id="inperson" value="Presencial">
-                <label for="inperson">Presencial</label>
+                <div class="radio-group">
 
-                <input type="radio" name="type" id="online" value="Online">
-                <label for="online">Online</label>
+                  <input type="radio" name="type" id="inperson" value="Presencial">
+                  <label for="inperson">
+                    <img class="building-hover" src="assets/icons/building.svg" alt="icone de Predio">
+                    <span>Presencial</span>
+                  </label>
+
+                  <input type="radio" name="type" id="online" value="Online">
+                  <label for="online">
+                    <img class="video-hover" src="assets/icons/video.svg" alt="icone de camera">
+                    <span>Online</span>
+                  </label>
+                </div>
+
               </div>
 
               <div class="input-wrapper local-event">
