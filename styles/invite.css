@@ -9,19 +9,19 @@
   & h1 {
     font: var(--heading-md);
     color: var(--text-heading);
-    
+
     margin-bottom: 40px;
   }
 
   & legend {
     display: flex;
     justify-content: center;
-    margin-bottom: 24px; 
+    margin-bottom: 24px;
 
     img {
       width: 24px;
       aspect-ratio: 1/1;
-      
+
       margin-right: 12px;
     }
 
@@ -43,7 +43,7 @@
     margin-bottom: 12px;
 
   }
-  
+
   input {
     max-width: 100%;
     height: 48px;
@@ -57,7 +57,7 @@
     &::placeholder {
       font: var(--body-md);
       color: var(--input-placeholder);
-    }  
+    }
   }
 
   & input[type="date"] {
@@ -66,11 +66,11 @@
   }
 }
 
-.inputs-grid { 
+.inputs-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: 
+  grid-template-areas:
   "name name"
   "start end"
   "type local"
@@ -85,7 +85,7 @@
 
 .date-start {
   grid-area: start;
- 
+
 }
 
 .date-end {
@@ -126,24 +126,24 @@
   display: flex;
   gap: 4px;
   padding: 4px;
-  
+
   border: 1px solid var(--input-stroke);
   border-radius: 8px;
-  
+
   height: 48px;
-  
+
   & input[type="radio"] {
     display: none;
   }
-  
-  & label { 
+
+  & label {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: all 0.03s ease;
-    
+
     margin-bottom: 0;
 
     & img {
@@ -168,7 +168,42 @@
 
 }
 
+.colors-personalization {
+  
+}
 
+.colors-type {
+  display: flex;
+  flex-direction: row;
 
+  gap: 16px; 
+
+  & label {
+    background-color: var(--shape-button);
+    border-radius: 999px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 28px;
+  } 
+
+  & input { 
+    display: none;
+  }
+
+  & img { 
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.colors-type input[type="radio"]:checked + label {
+  border: 2px solid var(--brand-light);
+}
 
 
