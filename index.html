@@ -58,7 +58,7 @@
 
                 <div class="radio-group">
 
-                  <input type="radio" name="type" id="inperson" value="Presencial">
+                  <input type="radio" name="type" id="inperson" value="Presencial" checked>
                   <label for="inperson">
                     <img class="building-hover" src="assets/icons/building.svg" alt="icone de Predio">
                     <span>Presencial</span>
@@ -157,7 +157,7 @@
               <label for="theme">Tema do evento</label>
               
               <div class="theme-grid-4">    
-                <input type="radio" name="theme" id="birthday" value="aniversario">
+                <input type="radio" name="theme" id="birthday" value="aniversario" checked>
                 <label for="birthday">
                   <img src="assets/images/radio-1.png" alt="imagem de aniversario">
                   <span>Aniversário</span>
@@ -235,20 +235,24 @@
             <div class="grid-2">
               <div class="input-wrapper">
                 <label for="style">Estilo</label>
-
-                <input type="checkbox" id="style">
-                <label for="style"></label>
-
-                <span id="style">Escuro</span>
+                
+                <div class="buttom-fake">
+                  <img src="assets/icons/button-fake.svg" alt="botão">
+                  <span id="style">Escuro</span>
+                </div>
               </div>
-
+              
               <div class="input-wrapper">
-                <label for="file">
-                  <img src="assets/icons/upload-secondary.svg" alt="ícone de upload"> Selecionar
-                </label>
-                <input type="file" name="file" id="file" placeholder="Selecionar">
+                <label for="file">Foto de capa</label>
+                
+                  <div class="file-perfil">
+                    <input type="file" name="file" id="file" placeholder="Selecionar">
+                    <label for="file">
+                      <img src="assets/icons/upload-secondary.svg" alt="ícone de upload"> Selecionar
+                    </label>
 
-                <span>Nenhum arquivo selecionado</span>
+                    <span>Nenhum arquivo selecionado</span>
+                  </div>
               </div>
 
             </div>
