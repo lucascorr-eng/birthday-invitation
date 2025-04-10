@@ -190,6 +190,8 @@
     align-items: center;
 
     margin-bottom: 28px;
+
+    cursor: pointer;
   } 
 
   & input { 
@@ -206,4 +208,39 @@
   border: 2px solid var(--brand-light);
 }
 
+.theme-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 8px;
+  
+  & input {
+    display: none;
+  }
 
+  & label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--shape-button);
+    border-radius: 8px;
+    border: 2px solid var(--input-stroke);
+
+    padding: 4px 4px 8px 4px;
+    margin-bottom: 0px;
+
+    cursor: pointer;
+  }
+
+  & img { 
+    width: 100%;
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+}
+
+.theme-grid-4 input[type="radio"]:checked + label {
+  border: 2px solid var(--brand-light);
+}
