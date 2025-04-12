@@ -259,7 +259,7 @@
 
           </fieldset>
 
-          <fieldset class="contact-details"> 
+          <fieldset class="contact-datails"> 
             <legend>
               <img src="assets/icons/contact.svg" alt="ícone de contato"> 
               <span>Dados para contato</span>
@@ -293,25 +293,36 @@
             <hr>
           </fieldset>
 
-          <fieldset class="subimt-box">
-            <input type="checkbox" id="agree">
-            <label for="agree">
+          <fieldset class="submit-box">
+            <input type="checkbox" id="agree" required>
+            <label for="agree" class="agree">
+              <img src="assets/icons/checkbox.svg" alt="checkbox">
               Li e concordo com os 
-              <a href="#">Termos e Condições</a>
-              e com a 
-              <a href="#">Política de Privacidade</a>
+              <a href="#"> Termos e Condições </a>
+               e com a  
+              <a href="#"> Política de Privacidade </a>
             </label>
 
             <input type="checkbox" id="agree-email">
-            <label for="agree-email">Aceito receber atualizações e promoções por e-mail</label>
+            <label for="agree-email" class="agree">
+              <img src="assets/icons/checkbox.svg" alt="checkbox">
+              Aceito receber atualizações e promoções por e-mail
+            </label>
 
             <input type="checkbox" id="agree-sms">
-            <label for="agree-sms">Aceito receber atualizações e promoções por SMS</label>
+            <label for="agree-sms" class="agree">
+              <img src="assets/icons/checkbox.svg" alt="checkbox">
+              Aceito receber atualizações e promoções por SMS
+            </label>
 
-            <button type="submit">
+          </fieldset>
+
+          <div class="button">
+            <button type="submit" >
               <img src="assets/icons/ticket.svg" alt="ticket"> Gerar Convite
             </button>
-          </fieldset>
+          </div>
+
         </form>
         
       </div>
