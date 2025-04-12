@@ -378,6 +378,7 @@ margin-bottom: 48px;
 
     border: none;
     border-radius: 8px;
+    font: var(--body-md);
     color: var(--text-heading);
   } 
 }
