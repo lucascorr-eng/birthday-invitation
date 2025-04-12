@@ -304,3 +304,34 @@ margin-bottom: 48px;
     color: var(--input-placeholder);
   }
 }
+
+.error { 
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 8px;
+
+  & img {
+    width: 16px;
+    height: 16px;
+  }
+
+  & span { 
+    color: var(--danger);
+  }
+}
+
+.grid-2-person {
+  margin: 16px 0 48px;
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-details hr {
+  border: 1px solid var(--input-stroke);
+  margin-bottom: 40px;
+}
